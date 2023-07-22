@@ -113,7 +113,7 @@ in
     ;
   inherit (elmPackages) elm-format elm-review elm-test;
   # TODO: these two should be statically compiled
-  fourmolu = with haskellPackages; callHackage "fourmolu" "0.13.0.0" { };
+  fourmolu = with haskellPackages; callHackage "fourmolu" "0.12.0.0" { };
   inherit (luaPackages) luacheck;
   inherit (nodePackages) eslint markdownlint-cli prettier cspell;
   inherit (ocamlPackages) ocp-indent;
